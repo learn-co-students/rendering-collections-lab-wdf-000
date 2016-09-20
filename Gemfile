@@ -39,6 +39,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'faker'
+  gem 'pry-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :development do
