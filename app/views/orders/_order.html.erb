@@ -1,0 +1,6 @@
+<tr>
+  <td><%= order.id %></td>
+  <!-- While iterating through the orders, go through each order's products, and then call on the _product.html.erb partial -->
+  <%= render order.products %>
+  <td><%= order.customer.name %></td>
+</tr>
