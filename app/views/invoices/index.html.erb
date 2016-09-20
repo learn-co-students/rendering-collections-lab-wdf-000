@@ -4,10 +4,11 @@
     <th>Invoice Id
     <th>Customer</th>  
   </tr>
-  <% @invoices.each do |invoice| %>
-    <tr>
-      <th><%= invoice.id %></th>
-      <th><%= invoice.orders.first ? invoice.orders.first.customer.name : "No Orders" %></th>
-    </tr>
-  <% end %>
+  <!-- Ask a question about why this isnt working on the test -->
+  <!-- How to render "No Invoices" using this partial -->
+  <%#= render partial: 'invoice', :collection => @invoices %>
+  
+  <!-- Most abstract version -->
+  <%= render(@invoices)  || "There are No Invoices" %>
+
 </table>
