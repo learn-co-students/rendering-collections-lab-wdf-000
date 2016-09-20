@@ -1,0 +1,7 @@
+<tr>
+  <td><%= order.id %></td>
+  <!-- While rendering order, render another partial -->
+  <!-- order.products is a collection which is passed to render -->
+  <%= render(order.products) %>
+  <td><%= order.customer.name %></td>
+</tr>
